@@ -3,7 +3,7 @@
 
 
 <!-- ### hw2.1.sh -->
-	cat > file1 | tail 
+	cat > file1
 	cat > file2
 	cat file1 file2 > file3
 	cat file3
