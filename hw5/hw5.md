@@ -32,8 +32,8 @@ ___
 ### 5.  Разрешить подключение по SSH только из сети 192.168.0.0/24.
 <!-- #### ну или в моем случае перенастроим на адрес 10.0.2.13 -->
     sudo iptables -L -nv
-#### у нас вроде как настроен пропус 22 порта с любого адреса
-    sudo iptables -d INPUT -p tcp -m tcp --dport 22 -j ACCEPT
-	sudo iptables -d INPUT -p tcp -m tcp -s 192.168.0.0/24 --dport 22 -j ACCEPT
-<!-- sudo iptables -d INPUT -p tcp -m tcp -s 10.0.2.13 --dport 22 -j ACCEPT -->
+#### у нас вроде как настроен пропус 22 порта с любого адреса, поэтомы сначала удаляем правило
+    sudo iptables -D INPUT -p tcp -m tcp --dport 22 -j ACCEPT
+	sudo iptables -D INPUT -p tcp -m tcp -s 192.168.0.0/24 --dport 22 -j ACCEPT
+<!-- sudo iptables -D INPUT -p tcp -m tcp -s 10.0.2.13 --dport 22 -j ACCEPT -->
 ___
