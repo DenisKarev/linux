@@ -66,10 +66,10 @@ ___
 ___
 ### 6.  Настроить схему балансировки трафика между несколькими серверами Apache на стороне Nginx с помощью модуля ngx_http_upstream_module.
 ### Заведем для начала еще один апач
-    sudo vim ports.conf
+    sudo vim /etc/apache2/ports.conf
 ![apache2 ports](hw6.6.01.png)
 
-    sudo vim sites-enabled/000-default.conf
+    sudo vim /etc/apache2/sites-enabled/000-default.conf
 ![apache2 conf](hw6.6.02.png)
 
     sudo apache2ctl -t
