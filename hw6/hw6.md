@@ -19,8 +19,6 @@ ___
 
     sudo apache2ctl -t
     sudo systemctl reload apache2
-
-    sudo iptables -P INPUT DROP
 ___
 
 ###	3.  Настроить схему обратного прокси для Nginx (динамика - на Apache).
