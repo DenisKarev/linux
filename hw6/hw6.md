@@ -79,10 +79,10 @@ ___
 
 ### Теперь собственно "балансировка" в nginx
     sudo vim /etc/nginx/nginx.conf
-![nginx](hw6.6.2.png)
+![nginx conf](hw6.6.2.png)
 
     sudo vim /etc/nginx/sites-enabled/default
-![nginx](hw6.6.1.png)
+![nginx site](hw6.6.1.png)
 
     sudo nginx -t
     sudo systemctl reload nginx
