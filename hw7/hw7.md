@@ -35,6 +35,8 @@ ___
 
     docker create --name phpmyadmin -e "PMA_ARBITRARY=1" -p 8080:80 --network hw7-bridge-network phpmyadmin
 
+    docker start phpmyadmin
+    
     docker ps
 ![docker_ps](hw7.2.1.png)
 ### Несмотря на то что где-то что-то запущено и даже кто-то кого-то видит, осталось ощущение что что-то я делаю не так %)
